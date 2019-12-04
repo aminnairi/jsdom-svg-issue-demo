@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <svg id="svg">
+            <g id="group"></g>
+        </svg>
+        <script>
+            "use strict";
+
+            window.addEventListener("load", function() {
+                const svg = document.getElementById("svg");
+                const group = document.getElementById("group");
+                
+                console.dir(svg.constructor);   // ƒ SVGSVGElement()
+                console.dir(group.constructor); // ƒ SVGGElement()
+            });
+        </script>
+    </body>
+</html>
